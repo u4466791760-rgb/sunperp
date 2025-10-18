@@ -1,0 +1,279 @@
+@font-face {
+  font-family: "harmonyos-sans";
+  font-weight: 400;
+  src: url("regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "harmonyos-sans";
+  font-weight: 500;
+  src: url("medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "harmonyos-sans";
+  font-weight: 700;
+  src: url("bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "harmonyos-sans-sc";
+  font-weight: 400;
+  src: url("") format("woff2");
+}
+@font-face {
+  font-family: "harmonyos-sans-sc";
+  font-weight: 500;
+  src: url("") format("woff2");
+}
+@font-face {
+  font-family: "harmonyos-sans-sc";
+  font-weight: 700;
+  src: url("") format("woff2");
+}
+
+@font-face {
+  font-family: "harmonyos-sans-tc";
+  font-weight: 400;
+  src: url("") format("woff2");
+}
+@font-face {
+  font-family: "harmonyos-sans-tc";
+  font-weight: 500;
+  src: url("") format("woff2");
+}
+@font-face {
+  font-family: "harmonyos-sans-tc";
+  font-weight: 700;
+  src: url("") format("woff2");
+}
+
+/** 全局设置字体 */
+html:not([data-v4-lang="zh-cn"]):not([data-v4-lang="zh-tc"]) {
+  font-family: "harmonyos-sans", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+}
+html[data-v4-lang="zh-cn"] {
+  font-family: "harmonyos-sans-sc", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+}
+html[data-v4-lang="zh-tc"] {
+  font-family: "harmonyos-sans-tc", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+}
+body,
+input,
+button,
+select,
+textarea {
+  font-family: inherit !important;
+}
+
+:root {
+  --color-primary-white: rgba(255, 255, 255, 1);
+  --color-primary-black: rgba(0, 0, 0, 1);
+  --color-primary-black_p40: rgba(0, 0, 0, 0.4);
+  --color-primary-black_p60: rgba(0, 0, 0, 0.6);
+  --color-gray-light-100: rgba(250, 250, 250, 1);
+  --color-gray-light-200: rgba(245, 245, 245, 1);
+  --color-gray-light-300: rgba(235, 235, 235, 1);
+  --color-gray-light-400: rgba(221, 221, 221, 1);
+  --color-gray-light-500: rgba(179, 179, 179, 1);
+  --color-gray-light-600: rgba(140, 140, 140, 1);
+  --color-gray-light-700: rgba(89, 89, 89, 1);
+  --color-gray-light-800: rgba(77, 77, 77, 1);
+  --color-gray-dark-100: rgba(22, 22, 22, 1);
+  --color-gray-dark-200_p50: rgba(31, 31, 31, 0.5);
+  --color-gray-dark-200: rgba(31, 31, 31, 1);
+  --color-gray-dark-300: rgba(38, 38, 38, 1);
+  --color-gray-dark-400: rgba(51, 51, 51, 1);
+  --color-gray-dark-500: rgba(64, 64, 64, 1);
+  --color-gray-dark-600: rgba(77, 77, 77, 1);
+  --color-gray-dark-700: rgba(102, 102, 102, 1);
+  --color-gray-dark-800: rgba(153, 153, 153, 1);
+  --color-blue-01: rgba(0, 127, 255, 1);
+  --color-blue-01_p10: rgba(0, 127, 255, 0.1);
+  --color-blue-01_p20: rgba(0, 127, 255, 0.2);
+  --color-purple-02: rgba(88, 78, 238, 1);
+  --color-blue-03: rgba(39, 198, 218, 1);
+  --color-red-classic-01: rgba(242, 73, 102, 1);
+  --color-red-01: rgba(236, 64, 122, 1);
+  --color-green-01: rgba(102, 187, 106, 1);
+  --color-purple-01: rgba(197, 102, 213, 1);
+  --color-red-classic-01_p10: rgba(242, 73, 102, 0.1);
+  --color-red-classic-01_p20: rgba(242, 73, 102, 0.2);
+  --color-red-classic-02: rgba(217, 65, 91, 1);
+  --color-red-modern-01: rgba(178, 16, 18, 1);
+  --color-red-modern-02: rgba(255, 65, 91, 1);
+  --color-red-modern-03_p20: rgba(255, 0, 0, 0.2);
+  --color-red-modern-04_p20: rgba(215, 115, 125, 0.2);
+  --color-green-classic-01: rgba(7, 176, 103, 1);
+  --color-green-classic-01_p10: rgba(7, 176, 103, 0.1);
+  --color-green-classic-01_p20: rgba(7, 176, 103, 0.2);
+  --color-green-classic-02: rgba(6, 153, 92, 1);
+  --color-green-modern-01: rgba(35, 104, 8, 1);
+  --color-green-modern-02: rgba(104, 179, 0, 1);
+  --color-green-modern-02_p20: rgba(104, 179, 0, 0.2);
+  --color-green-modern-03: rgba(142, 214, 112, 1);
+  --color-green-modern-01_p20: rgba(90, 191, 40, 0.2);
+  --color-orange-01: rgba(255, 149, 0, 1);
+  --color-orange-01_p10: rgba(255, 149, 0, 0.1);
+  --color-orange-01_p20: rgba(255, 149, 0, 0.2);
+  --color-orange-02: rgba(255, 192, 66, 1);
+}
+
+html[data-v4-theme="light"] {
+  --Text-L1: var(--color-primary-black);
+  --Text-L2: var(--color-gray-light-700);
+  --Text-L3: var(--color-gray-light-600);
+  --Text-L4: var(--color-gray-light-500);
+  --Background-L1: var(--color-primary-white);
+  --Background-PopUp: var(--color-primary-white);
+  --Background-L2: var(--color-gray-light-100);
+  --Background-L3: var(--color-gray-light-200);
+  --Background-Toast: var(--color-gray-light-800);
+  --Border-L1: var(--color-gray-light-400);
+  --Border-L2: var(--color-gray-light-300);
+  --Button-Blue-Fill: var(--color-blue-01);
+  --Button-Blue-Text: var(--color-primary-white);
+  --Button-Green-Fill: var(--color-green-classic-01);
+  --Button-Green-Text: var(--color-primary-white);
+  --Functional-Blue: var(--color-blue-01);
+  --Functional-Green: var(--color-green-classic-01);
+  --Functional-Red: var(--color-red-classic-01);
+  --Functional-Blue_bg: var(--color-blue-01_p10);
+  --Text-Green: var(--color-green-classic-01);
+  --Functional-Green_bg: var(--color-green-classic-01_p10);
+  --Text-Red: var(--color-red-classic-01);
+  --Functional-Red_bg: var(--color-red-classic-01_p10);
+  --Functional-Orange: var(--color-orange-01);
+  --Functional-Orange_bg: var(--color-orange-01_p10);
+  --Functional-White: var(--color-primary-white);
+  --Functional-black: var(--color-primary-black);
+  --Overlay-mask: var(--color-primary-black_p40);
+  --Button-Red-Fill: var(--color-red-classic-01);
+  --Button-Red-Text: var(--color-primary-white);
+  --kline-ma1: var(--color-purple-01);
+  --kline-ma2: var(--color-blue-03);
+  --kline-ma3: var(--color-purple-02);
+  --kline-ma4: var(--color-red-01);
+  --kline-ma5: var(--color-orange-01);
+  --kline-ma6: var(--color-orange-02);
+  --kline-ma7: var(--color-green-01);
+  --kline-ma8: var(--color-blue-01);
+}
+html[data-v4-theme="dark"] {
+  --Text-L1: var(--color-primary-white);
+  --Text-L2: var(--color-gray-dark-800);
+  --Text-L3: var(--color-gray-dark-700);
+  --Text-L4: var(--color-gray-dark-500);
+  --Background-L1: var(--color-primary-black);
+  --Background-PopUp: var(--color-gray-dark-100);
+  --Background-L2: var(--color-gray-dark-200_p50);
+  --Background-L3: var(--color-gray-dark-200);
+  --Background-Toast: var(--color-gray-dark-600);
+  --Border-L1: var(--color-gray-dark-400);
+  --Border-L2: var(--color-gray-dark-300);
+  --Button-Blue-Fill: var(--color-blue-01);
+  --Button-Blue-Text: var(--color-primary-white);
+  --Button-Green-Fill: var(--color-green-classic-02);
+  --Button-Green-Text: var(--color-primary-white);
+  --Functional-Blue: var(--color-blue-01);
+  --Functional-Green: var(--color-green-classic-02);
+  --Functional-Red: var(--color-red-classic-02);
+  --Functional-Blue_bg: var(--color-blue-01_p20);
+  --Text-Green: var(--color-green-classic-02);
+  --Functional-Green_bg: var(--color-green-classic-01_p20);
+  --Text-Red: var(--color-red-classic-02);
+  --Functional-Red_bg: var(--color-red-classic-01_p20);
+  --Functional-Orange: var(--color-orange-01);
+  --Functional-Orange_bg: var(--color-orange-01_p20);
+  --Functional-White: var(--color-primary-white);
+  --Functional-black: var(--color-primary-black);
+  --Overlay-mask: var(--color-primary-black_p60);
+  --Button-Red-Fill: var(--color-red-classic-02);
+  --Button-Red-Text: var(--color-primary-white);
+  --kline-ma1: var(--color-purple-01);
+  --kline-ma2: var(--color-blue-03);
+  --kline-ma3: var(--color-purple-02);
+  --kline-ma4: var(--color-red-01);
+  --kline-ma5: var(--color-orange-01);
+  --kline-ma6: var(--color-orange-02);
+  --kline-ma7: var(--color-green-01);
+  --kline-ma8: var(--color-blue-01);
+}
+html[data-v4-theme="modern-light"] {
+  --Text-L1: var(--color-primary-black);
+  --Text-L2: var(--color-gray-light-700);
+  --Text-L3: var(--color-gray-light-600);
+  --Text-L4: var(--color-gray-light-500);
+  --Background-L1: var(--color-primary-white);
+  --Background-PopUp: var(--color-primary-white);
+  --Background-L2: var(--color-gray-light-100);
+  --Background-L3: var(--color-gray-light-200);
+  --Background-Toast: var(--color-gray-light-800);
+  --Border-L1: var(--color-gray-light-400);
+  --Border-L2: var(--color-gray-light-300);
+  --Button-Blue-Fill: var(--color-primary-black);
+  --Button-Blue-Text: var(--color-primary-white);
+  --Button-Green-Fill: var(--color-green-modern-02_p20);
+  --Button-Green-Text: var(--color-green-modern-01);
+  --Functional-Blue: var(--color-blue-01);
+  --Functional-Green: var(--color-green-modern-02);
+  --Functional-Red: var(--color-red-modern-02);
+  --Functional-Blue_bg: var(--color-blue-01_p10);
+  --Text-Green: var(--color-green-modern-01);
+  --Functional-Green_bg: var(--color-green-modern-02_p20);
+  --Text-Red: var(--color-red-modern-01);
+  --Functional-Red_bg: var(--color-red-modern-04_p20);
+  --Functional-Orange: var(--color-orange-01);
+  --Functional-Orange_bg: var(--color-orange-01_p10);
+  --Functional-White: var(--color-primary-white);
+  --Functional-black: var(--color-primary-black);
+  --Overlay-mask: var(--color-primary-black_p40);
+  --Button-Red-Fill: var(--color-red-modern-04_p20);
+  --Button-Red-Text: var(--color-red-modern-01);
+  --kline-ma1: var(--color-purple-01);
+  --kline-ma2: var(--color-blue-03);
+  --kline-ma3: var(--color-purple-02);
+  --kline-ma4: var(--color-red-01);
+  --kline-ma5: var(--color-orange-01);
+  --kline-ma6: var(--color-orange-02);
+  --kline-ma7: var(--color-green-01);
+  --kline-ma8: var(--color-blue-01);
+}
+html[data-v4-theme="modern-dark"] {
+  --Text-L1: var(--color-primary-white);
+  --Text-L2: var(--color-gray-dark-800);
+  --Text-L3: var(--color-gray-dark-700);
+  --Text-L4: var(--color-gray-dark-500);
+  --Background-L1: var(--color-primary-black);
+  --Background-PopUp: var(--color-gray-dark-100);
+  --Background-L2: var(--color-gray-dark-200_p50);
+  --Background-L3: var(--color-gray-dark-200);
+  --Background-Toast: var(--color-gray-dark-600);
+  --Border-L1: var(--color-gray-dark-400);
+  --Border-L2: var(--color-gray-dark-300);
+  --Button-Blue-Fill: var(--color-primary-white);
+  --Button-Blue-Text: var(--color-primary-black);
+  --Button-Green-Fill: var(--color-green-modern-01_p20);
+  --Button-Green-Text: var(--color-green-modern-03);
+  --Functional-Blue: var(--color-blue-01);
+  --Functional-Green: var(--color-green-modern-03);
+  --Functional-Red: var(--color-red-modern-02);
+  --Functional-Blue_bg: var(--color-blue-01_p20);
+  --Text-Green: var(--color-green-modern-03);
+  --Functional-Green_bg: var(--color-green-modern-01_p20);
+  --Text-Red: var(--color-red-modern-02);
+  --Functional-Red_bg: var(--color-red-modern-03_p20);
+  --Functional-Orange: var(--color-orange-01);
+  --Functional-Orange_bg: var(--color-orange-01_p20);
+  --Functional-White: var(--color-primary-white);
+  --Functional-black: var(--color-primary-black);
+  --Overlay-mask: var(--color-primary-black_p60);
+  --Button-Red-Fill: var(--color-red-modern-03_p20);
+  --Button-Red-Text: var(--color-red-modern-02);
+  --kline-ma1: var(--color-purple-01);
+  --kline-ma2: var(--color-blue-03);
+  --kline-ma3: var(--color-blue-01);
+  --kline-ma4: var(--color-red-01);
+  --kline-ma5: var(--color-orange-01);
+  --kline-ma6: var(--color-orange-02);
+  --kline-ma7: var(--color-green-01);
+  --kline-ma8: var(--color-blue-01);
+}
